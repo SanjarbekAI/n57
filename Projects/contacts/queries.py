@@ -28,3 +28,11 @@ def add_contact_query(params: tuple) -> bool | None:
         return True
     except Exception as e:
         print(e)
+
+
+def get_all_contacts() -> list[tuple] | None:
+    try:
+        query = "SELECT * FROM contacts"
+        return execute_query(query=query, fetch="all")
+    except Exception as e:
+        print(e)

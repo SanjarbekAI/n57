@@ -1,5 +1,5 @@
 import menu_text
-from Projects.contacts.crud import add_contact
+from crud import add_contact, show_contacts
 from queries import create_tables
 
 
@@ -20,7 +20,8 @@ def show_main_menu():
         pass
 
     elif option == "4":
-        pass
+        result = show_contacts()
+        print(result)
 
     elif option == "5":
         pass
