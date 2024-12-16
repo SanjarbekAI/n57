@@ -6,3 +6,10 @@ main_menu = """
 5. Search with name | full_name
 """
 
+auth_menu = """
+ 1. Register
+ 2. Login
+ 3. Forget password
+ 4. Activate email
+ 5. Exit
+ """
